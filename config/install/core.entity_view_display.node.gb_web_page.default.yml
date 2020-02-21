@@ -6,6 +6,7 @@ dependencies:
     - node.type.gb_web_page
   module:
     - layout_builder
+    - layout_builder_restrictions
     - layout_discovery
     - user
 third_party_settings:
@@ -19,6 +20,22 @@ third_party_settings:
           label: ''
         components: {  }
         third_party_settings: {  }
+  layout_builder_restrictions:
+    entity_view_mode_restriction:
+      allowed_blocks:
+        'Chaos Tools': {  }
+        'Content fields': {  }
+        Devel: {  }
+        Forms: {  }
+        Help: {  }
+        'Inline blocks': {  }
+        'Lists (Views)': {  }
+        Menus: {  }
+        System: {  }
+        User: {  }
+        'User fields': {  }
+        core: {  }
+      allowed_layouts: {  }
 id: node.gb_web_page.default
 targetEntityType: node
 bundle: gb_web_page
