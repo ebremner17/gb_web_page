@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: gb_pa_web_page
+label: 'Web page'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  d34f68f2-c032-49ae-9474-8c6e9cd3acbd:
+    id: node_type
+    bundles:
+      gb_web_page: gb_web_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d34f68f2-c032-49ae-9474-8c6e9cd3acbd
+selection_logic: and
+weight: -5
+relationships: {  }
